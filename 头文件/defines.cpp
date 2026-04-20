@@ -53,7 +53,22 @@ public:
     }
 
 };
- 
+class Rect :public Vector {
+public:
+    double height;
+    double width;
+    Rect() :Vector(0, 0), height(0),width(0){}
+    Rect(double _x,double _y,double _width,double _height):Vector(_x,_y),width(_width),height(_height){}
+    Coordinate Getcenter() {
+        return Coordinate(x + width * 0.5, y + height * 0.5);
+    }
+    Coordinate Intersect(const Rect& rect1) const {
+
+    }
+    bool Contains(const Coordinate& coord)const {
+        return(x > coord.x && x < coord.x + width) && (y > coord.y && y < coord.y + height);
+    }
+};
 using Coordinate = Vector;
 
 
