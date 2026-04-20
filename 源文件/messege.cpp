@@ -9,7 +9,7 @@ void Peekinputmessege() {
 	}
 }
 //ÕÒaiÎÊµÄ
-bool IsKeyDown(int key) {
+bool Iskeydown(int key) {
 	return (GetAsyncKeyState(key) & 0x8000) != 0;
 }
 

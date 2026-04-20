@@ -8,6 +8,7 @@ int APIENTRY WinMain(
 	_In_ int nShowCmd)
 {
 	initgraph(640, 480);
+	BeginBatchDraw();
 	Coordinate mouse;
 	while (true) {
 		Peekinputmessege();
@@ -15,9 +16,12 @@ int APIENTRY WinMain(
 			break;
 		}
 		mouse = Getmouthmessege();
+		cleardevice();
 		circle(mouse.x, mouse.y, 10);
-
+		FlushBatchDraw();
+		Sleep(15);
 	}
+	EndBatchDraw();
 	circle(200, 100, 100);
 	Sleep(5000);
 	closegraph();
