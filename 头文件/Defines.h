@@ -53,6 +53,7 @@ public:
     }
 
 };
+using Coordinate = Vector;
 class Rect :public Vector {
 public:
     double height;
@@ -69,7 +70,7 @@ public:
         return(x > coord.x && x < coord.x + width) && (y > coord.y && y < coord.y + height);
     }
 };
-using Coordinate = Vector;
+
 
 
 #endif // !1

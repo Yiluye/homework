@@ -19,8 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="头文件\defines.cpp" />
+    <ClCompile Include="头文件\Defines.h" />
     <ClCompile Include="源文件\main.cpp" />
+    <ClCompile Include="源文件\Messege.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="头文件\Messege.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
